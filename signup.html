@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/signup.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <!--MY NAVBAR-->
+    <header class="my-header scrollspy" id="home">
+        <div class="navbar-fixed ">
+            <nav class=" #212121 red darken-2 transparent nav-wrapper">
+                <a href="#home" class="brand-logo center-align"><i class="material-icons"></i>Save Life</a>
+                <a href="#" class="sidenav-trigger left" data-target="mobile-links"><i
+                        class="material-icons">menu</i></a>
+                <div class="navbar-links">
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="">Volunteers</a></li>
+                        <li><a href="">Find Blood</a></li>
+                        <li><a href="">Live Feed</a></li>
+                        <li><a href="">Signup</a></li>
+                        <li><a class="waves-effect waves-light btn-large donate-button ">Donate</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="row #212121 red darken-1 nav-list">
+                    <ul class=" hide-on-large-only">
+                        <li class="col m3 s6 center-align"><a href="#home">Volunteers</a></li>
+                        <li class="col m3 s6 center-align"><a href="#contact">Find Blood</a></li>
+                        <li class="col m3 s6 center-align"><a href="#join">Live Feed</a></li>
+                        <li class="col m3 s6 center-align"><a href="#news">Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#home">Volunteers</a></li>
+        <li><a href="#contact">Find Blood</a></li>
+        <li><a href="#join">Life feed</a></li>
+        <li><a href="#news">Signup</a></li>
+    </ul>
+    <div class="hide-on-large-only fake-div1 #212121 red darken-2 "></div>
+    <div class="hide-on-med-and-up fake-div2 #212121 red darken-2 "></div>
+
+
+
+    <!-- login div part1 -->
+    <div class="wallpaper" id="login-div">
+        <div class="container #f5f5f5 grey lighten-4">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center-align grey-text text-darken-2">Sign In</h4></u>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col l7 m12 s12 center-align ">
+                    <span>Not registered yet?<a href="#" class="modal-trigger red-text darken-3"
+                            data-target="modal-signup">Register</a></span>
+
+                    <div class="row my-form">
+                        <form class="col s12" id="login-form">
+                            <div class="row  center-align ">
+                                <div class="input-field col s6 text-area-div1">
+                                    <span><img src="https://img.icons8.com/android/24/000000/secured-letter.png"><input
+                                            id="login-email" type="email" class="validate" placeholder="Email or ID"
+                                            required></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <span><img src="https://img.icons8.com/metro/24/000000/lock-2.png"><input
+                                            id="login-password" type="password" class="validate" id="textarea1"
+                                            placeholder="Password" required></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s7">
+                                    <button class=" waves-effect waves-light btn red">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <span class="red-text darken-3">Forget ID/Password?</span><br><br>
+                    <span>Need <a href="" class="red-text darken-3">help?</a></p>
+
+                </div>
+                <!-- why register part -->
+                <div class="col l5 m12 s12 why-register">
+                    <h5>Why Register?</h5>
+                    <span><img src="https://img.icons8.com/material/24/000000/checkmark.png">Blood donation saves lives
+                        and improves health.</span><br>
+                    <span><img src="https://img.icons8.com/material/24/000000/checkmark.png">There is a constant need
+                        for regular blood supply because blood can be stored for only a limited time before
+                        use</span><br>
+                    <span><img src="https://img.icons8.com/material/24/000000/checkmark.png">Blood is the most precious
+                        gift that anyone can give to another person</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- REGISTER MODAL -->
+ <div id="modal-signup" class="modal">
+        <div class="modal-content">
+          <h4>Sign up</h4><br />
+          <form id="signup-form">
+            <div class="input-field">
+              <input type="email" id="signup-email" placeholder="Email address" required />
+            </div>
+            <div class="input-field">
+              <input type="password" id="signup-password" placeholder="Choose password" required />
+            </div>
+            <button class=" waves-effect waves-light btn red"><a href="loggedin.html"></a> Sign up</button>
+          </form>
+        </div>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+      </script>
+  <!-- Compiled and minified JavaScript -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>
