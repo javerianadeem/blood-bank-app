@@ -77,3 +77,11 @@
     padding-top: 6%;
     margin-top: 18.5%;
 }
+/* Images and paras */
+.find-donors-div  {
+    margin-top: 3%;
+}
+.para {
+    color: rgb(122, 135, 148);
+    font-size: 16px;
+}
