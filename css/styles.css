@@ -1,0 +1,79 @@
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .icon-bar :hover {
+      transition: all 0.5s;
+      background-color: rgb(214, 52, 79) !important;
+  }
+  .icon-bar-2 {
+    display: inline-block;
+    margin-top: 7%;
+    text-align: center;
+    padding-top: 2% ;
+    padding-bottom: 2% ;
+    display: none;
+}
+  
+  /* Style the icon bar links */
+  .icon-bar-2 a {
+    text-align: center;
+    padding: 12px;
+    
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .icon-bar-2 :hover {
+      transition: all 0.5s;
+      background-color: rgb(214, 52, 79) !important;
+  }
+
+
+/*header */
+
+.brand-logo {
+    font-size: 1.5em !important;
+    padding-left: 2% !important;
+}
+
+.navbar-links ul {
+    margin-right: 8% !important;
+}
+.navbar-links ul li a:active {
+    color: rgb(228, 67, 94);
+}
+.nav-list ul li a {
+    font-size: 16.5px;
+}
+.nav-list {
+    padding: 0;
+}
+.connect-div {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.fake-div1{
+    margin-top: 6%;
+}
+.fake-div2{
+    padding-top: 6%;
+    margin-top: 18.5%;
+}
