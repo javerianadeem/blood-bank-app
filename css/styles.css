@@ -85,3 +85,9 @@
     color: rgb(122, 135, 148);
     font-size: 16px;
 }
+/* CARDS */
+.card-image {
+    height: 190px;
+    overflow: hidden;
+}
+
