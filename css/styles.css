@@ -9,7 +9,6 @@
     z-index: 100;
 
   }
-  
   /* Style the icon bar links */
   .icon-bar a {
     display: block;
@@ -23,15 +22,18 @@
       transition: all 0.5s;
       background-color: rgb(214, 52, 79) !important;
   }
-  .icon-bar-2 {
-    display: inline-block;
-    margin-top: 7%;
-    text-align: center;
-    padding-top: 2% ;
-    padding-bottom: 2% ;
-    display: none;
+.facebook {
+    background-color: #1a237e;
 }
-  
+.twitter {
+    background-color: #38A1F3;
+}
+.youtube {
+    background-color:  #ff0000;
+}
+.instagram {
+    background-color: #E1306C;
+}
   /* Style the icon bar links */
   .icon-bar-2 a {
     text-align: center;
@@ -90,4 +92,23 @@
     height: 190px;
     overflow: hidden;
 }
-
+/* FOOTER */
+footer ul li{
+    display: inline;
+}
+.footer-link {
+    color: black; 
+    padding: 1.5%;
+}
+.footer-link:hover {
+    color: red;
+}
+.footer-div {
+    padding: 1%;
+}
+.dot-div {
+    padding: 3px;
+}
+.footer-copyright {
+    padding: 2%;
+}
