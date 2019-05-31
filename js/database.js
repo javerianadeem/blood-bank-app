@@ -19,18 +19,7 @@ function createContact(doc) {
     </div>
 </div>`
 }
-//saving data
-form.addEventListener('submit',(e) => {
-    e.preventDefault();
-    db.collection('donors').add({
-        name: form.name.value,
-        number: form.number.value,
-        address: form.address.value,
-        email : form.email.value,
-        bloodGroup : form.bloodgroup.value,
-    });
-    form.reset()
-});
+
 
 // realtime listener
 db.collection('donors').onSnapshot(snapshot => {
@@ -58,3 +47,15 @@ db.collection('donors').onSnapshot(snapshot => {
 // console.log('hello')
 //     });
 // });
+//saving data
+form.addEventListener('submit',(e) => {
+    e.preventDefault();
+    db.collection('donors').add({
+        name: form.name.value,
+        number: form.number.value,
+        address: form.address.value,
+        email : form.email.value,
+        bloodGroup : form.bloodgroup.value,
+    });
+    form.reset()
+});
