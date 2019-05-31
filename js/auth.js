@@ -9,18 +9,17 @@ signupForm.addEventListener('submit', (e) => {
     const email = signupForm['signup-email'].value;
     const password = signupForm['signup-password'].value;
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
-        const modal = document.querySelector('#modal-signup')
+        const modal = document.querySelector('#modal-register')
         M.Modal.getInstance(modal).close()
         signupForm.reset()
     });
 });
 
-//logout
-const logout = document.querySelector('#logout');
+// //logout
+const logout = document.querySelector('logout');
 logout.addEventListener('click', (e) => {
     auth.signOut().then(() => {
-        loginDiv.style.display = 'block';
-        welcomeDiv.style.display = 'none';
+console.log('hello')
     });
 });
 // login
@@ -31,7 +30,6 @@ loginForm.addEventListener('submit', (e) => {
     const password = loginForm['login-password'].value;
     auth.signInWithEmailAndPassword(email, password).then(cred => {
         loginForm.reset();
-        welcomeDiv.style.display = 'block';
-        loginDiv.style.display = 'none';
+        alert('helo')
     });
 });

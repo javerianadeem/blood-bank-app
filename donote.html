@@ -28,7 +28,7 @@
                         <li><a href="#home">Volunteers</a></li>
                         <li><a href="donors.html">Find Blood</a></li>
                         <li><a href="#join">Live Feed</a></li>
-                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href=""  id="logout">Logout</a></li>
                         <li><a href="signup.html" class="waves-effect waves-light btn-large donate-button ">Donate</a>
                         </li>
                     </ul>
@@ -39,7 +39,7 @@
                         <li class="col m3 s6 center-align"><a href="">Volunteers</a></li>
                         <li class="col m3 s6 center-align"><a href="donors.html">Find Blood</a></li>
                         <li class="col m3 s6 center-align"><a href="">Live Feed</a></li>
-                        <li class="col m3 s6 center-align"><a href="signup.html">Signup</a></li>
+                        <li class="col m3 s6 center-align"><a href="signup.html">Logout</a></li>
                     </ul>
                 </div>
             </nav>
@@ -50,88 +50,49 @@
         <li><a href="#home">Volunteers</a></li>
         <li><a href="donors.html">Find Blood</a></li>
         <li><a href="#join">Life feed</a></li>
-        <li><a href="signup.html">Signup</a></li>
+        <li><a href="" class="">Logout</a></li>
     </ul>
     <div class="hide-on-large-only fake-div1 #212121 red darken-2 "></div>
     <div class="hide-on-med-and-up fake-div2 #212121 red darken-2 "></div>
+    <br><br>
+    <div class="center-align"> <a href="" class="btn btn-small pulse red white-text modal-trigger"
+            data-target="donor-details-modal">Donate</a> </div>
 
+    <!-- ALL DONORS HERE -->
+    <div class="center-align">
+        <h4 class=""><u>Blood Donors</u></h4>
+    </div>
+    <div class="container">
+        <div class="row " id="add-donor">
 
-
-
-    <!-- login div part1 -->
-    <div class="wallpaper" id="login-div">
-        <div class="container #f5f5f5 grey lighten-4">
-            <div class="row">
-                <div class="col s12">
-                    <h4 class="center-align grey-text text-darken-2">Sign In</h4></u>
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col l7 m12 s12 center-align ">
-                    <span>Kindly <a href="#" class="modal-trigger red-text darken-3"
-                            data-target="modal-register">Register</a> yourself first if you haven't yet.</span>
-
-                    <div class="row my-form">
-                        <form class="col s12" id="login-form">
-                            <div class="row  center-align ">
-                                <div class="input-field col s6 text-area-div1">
-                                    <span><img src="https://img.icons8.com/android/24/000000/secured-letter.png"><input
-                                            id="login-email" type="email" class="validate" placeholder="Email or ID"
-                                            required></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <span><img src="https://img.icons8.com/metro/24/000000/lock-2.png"><input
-                                            id="login-password" type="password" class="validate" id="textarea1"
-                                            placeholder="Password" required></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s7">
-                                    <a href="donote.html" class="waves-effect waves-light btn red">Login</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <span class="red-text darken-3">Forget ID/Password?</span><br><br>
-                    <span>Need <a href="" class="red-text darken-3">help?</a></p>
-
-                </div>
-                <!-- why register part -->
-                <div class="col l5 m12 s12 why-register">
-                    <h5>Why Register?</h5>
-                    <span><img src="https://img.icons8.com/material/24/000000/checkmark.png">Blood donation saves lives
-                        and improves health.</span><br>
-                    <span><img src="https://img.icons8.com/material/24/000000/checkmark.png">There is a constant need
-                        for regular blood supply because blood can be stored for only a limited time before
-                        use</span><br>
-                    <span><img src="https://img.icons8.com/material/24/000000/checkmark.png">Blood is the most precious
-                        gift that anyone can give to another person</span>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- WELCOME DIV -->
 
-
-
-    <!-- REGISTER MODAL -->
-    <div id="modal-register" class="modal">
+    <!-- DONOR DETAILS MODAL -->
+    <div id="donor-details-modal" class="modal">
         <div class="modal-content">
-            <h4>Sign up</h4><br />
-            <form id="signup-form">
+            <h4>ADD Your Details</h4><br />
+            <form id="donor-form">
                 <div class="input-field">
-                    <input type="email" id="signup-email" placeholder="Email address" required />
+                    <input type="text" id="donor-name" placeholder="Enter name" name="name" required />
                 </div>
                 <div class="input-field">
-                    <input type="password" id="signup-password" placeholder="Choose password" required />
+                    <input type="email" id="donor-email" placeholder="Email address" name="email" required />
                 </div>
-                <button class=" waves-effect waves-light btn red"><a href=""></a> Sign up</button>
+                <div class="input-field">
+                    <input type="text" id="donor-bloodgroup" placeholder="Enter blood group" name="bloodgroup"
+                        required />
+                </div>
+                <div class="input-field">
+                    <input type="text" id="donor-address" placeholder="Enter address" name="address" required />
+                </div>
+                <div class="input-field">
+                    <input type="number" id="donor-number" placeholder="Enter Contact no. " name="number" required />
+                </div>
+                <button class=" waves-effect waves-light btn red"> Save</button>
             </form>
         </div>
     </div>
-
 
 
 
@@ -204,7 +165,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/auth.js"></script>
+    <script src="js/database.js"></script>
 </body>
 
 </html>

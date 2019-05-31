@@ -118,7 +118,7 @@ footer ul li{
     padding-bottom: 3% !important;
 }
 /* Removing default styling of input field and adding border */
-input[type="email"],input[type="password"] {
+/* input[type="email"],input[type="password"] {
     border-bottom: none !important;
     box-shadow: none !important;
     border: 1px solid #d1caca !important;  
@@ -126,9 +126,25 @@ input[type="email"],input[type="password"] {
     border-radius: 5px !important;
     padding-right: 15% !important;
     padding-left: 3% !important;
-}
-input[type="email"]:focus,textarea:focus {
+} */
+/* input[type="email"]:focus,textarea:focus {
     box-shadow: none !important;
+} */
+#signup-email,#signup-password,#donor-name,#donor-email,#donor-bloodgroup,#donor-number,#donor-address {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border: 1px solid #d1caca !important;  
+    border-radius: 5px !important;
+    padding-left: 1%;
+}
+#login-email,#login-password {
+        border-bottom: none !important;
+        box-shadow: none !important;
+        border: 1px solid #d1caca !important;  
+        margin-top: 3% !important;
+        border-radius: 5px !important;
+        padding-right: 15% !important;
+        padding-left: 3% !important;
 }
 .my-form {
     border: 2px solid rgb(179, 173, 173);
@@ -139,4 +155,11 @@ input[type="email"]:focus,textarea:focus {
 #welcome-div {
     padding: 2%;
     display: none;
+}
+.modal-signup {
+    overflow-x: hidden;
+}
+/* DONOR CARDS */
+.donor-card {
+    border: 2px solid red;
 }
