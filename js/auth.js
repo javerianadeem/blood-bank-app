@@ -9,7 +9,9 @@ signupForm.addEventListener('submit', (e) => {
         const modal = document.querySelector('#modal-register')
         M.Modal.getInstance(modal).close()
         signupForm.reset()
-    });
+    }).catch(err =>
+        signupForm.querySelector(".errorSignup").innerHTML = err.message
+    )
 });
 
 // // //logout
@@ -29,7 +31,7 @@ loginForm.addEventListener('submit', (e) => {
     auth.signInWithEmailAndPassword(email, password).then(cred => {
         loginForm.reset();
     }).catch(err => {
-        loginForm.querySelector('.error').innerHTML = err.message;
+        loginForm.querySelector('.errorLogin').innerHTML = err.message;
         
     })
 });
