@@ -151,3 +151,7 @@ footer ul li{
 .donor-card {
     border: 2px solid red;
 }
+.error-div {
+    padding-right: 30% !important;
+    margin-top: 0 !important;
+}

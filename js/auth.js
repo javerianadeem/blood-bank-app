@@ -28,7 +28,10 @@ loginForm.addEventListener('submit', (e) => {
     const password = loginForm['login-password'].value;
     auth.signInWithEmailAndPassword(email, password).then(cred => {
         loginForm.reset();
-    });
+    }).catch(err => {
+        loginForm.querySelector('.error').innerHTML = err.message;
+        
+    })
 });
 
 firebase.auth().onAuthStateChanged(function (user) {
