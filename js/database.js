@@ -14,7 +14,7 @@ function createContact(doc) {
             <span>Email: ${doc.data().email}</span><br>
             <span>Blood Group: ${doc.data().bloodGroup}</span><br>
             <span>Address: ${doc.data().address}</span><br>
-            <span>Number: ${doc.data().contact}</span><br>
+            <span>Number: ${doc.data().number}</span><br>
         </div>
     </div>
 </div>`
@@ -50,12 +50,18 @@ db.collection('donors').onSnapshot(snapshot => {
 //saving data
 form.addEventListener('submit',(e) => {
     e.preventDefault();
-    db.collection('donors').add({
-        name: form.name.value,
-        number: form.number.value,
-        address: form.address.value,
-        email : form.email.value,
-        bloodGroup : form.bloodgroup.value,
-    });
-    form.reset()
+    if(form.bloodgroup.value === 'A+' || form.bloodgroup.value === 'B+'  || form.bloodgroup.value === 'A-' || form.bloodgroup.value === 'B-' || form.bloodgroup.value === 'AB+' || form.bloodgroup.value === 'AB-' || form.bloodgroup.value === 'O+' || form.bloodgroup.value === 'O-' )
+    {
+        db.collection('donors').add({
+            name: form.name.value,
+            email : form.email.value,
+            bloodGroup : form.bloodgroup.value,
+            address: form.address.value,
+            number: form.number.value,
+        });
+        form.reset()
+    }
+    else {
+        alert("Enter Valid Blood Group (A+, B+, A-, B-, AB+, AB-, O+, O-");
+    }
 });
